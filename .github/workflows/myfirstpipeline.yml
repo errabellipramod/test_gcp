@@ -22,6 +22,10 @@ jobs:
          - environment: test
            secret_name: TEST_PASSWORD
     
+    permissions:
+      id-token: 'write'
+      content: 'read'
+    
 
     steps: 
       - name: Checkout
