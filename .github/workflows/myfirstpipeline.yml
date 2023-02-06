@@ -8,7 +8,7 @@ jobs:
     name: terraform
     runs-on: ubuntu-latest
 
-    defauts:
+    defaults:
       run:
         shell: bash
         working-directory: test
