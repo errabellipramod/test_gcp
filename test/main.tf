@@ -1,6 +1,6 @@
 terraform {
     backend "gcs" {
-        bucket = "terraform _pramod"
+        bucket = "terraform_pramod"
     }
 }
 
