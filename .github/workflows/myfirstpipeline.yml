@@ -42,7 +42,7 @@ jobs:
       
       - name: terrafrom diff
         id: diff
-        run: terraform fmr diff -write=true
+        run: terraform fmt diff -write=true
 
       - name: terraform fmt
         id: fmt
