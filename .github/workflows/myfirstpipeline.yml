@@ -11,7 +11,9 @@ jobs:
     defauts:
       run:
         shell: bash
-    
+        working-directory: test
+
+
     strategy:
      max-parallel: 1
      matrix:
