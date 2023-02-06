@@ -44,9 +44,9 @@ jobs:
         id: diff
         run: terraform fmt -diff -write=true
 
-      - name: terraform fmt
-        id: fmt
-        run: terraform fmt - check
+      #- name: terraform fmt
+      #  id: fmt
+      # run: terraform fmt - check
 
       - name: Terraform init
         run: terraform init -backend-config vars/${{ matrix.environment }}-backend.tfvars -reconfigure
