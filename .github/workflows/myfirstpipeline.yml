@@ -57,5 +57,5 @@ jobs:
       - name: Terraform Plan
         run: terraform plan -out=${{ github.sha }}.plan
 
-      - name: Terrafrom Apply
-        run: terrafrom apply -auto-approve "{{ github.sha}}.plan"
+      - name: Terraform Apply
+        run: terraform apply -auto-approve "{{ github.sha}}.plan"
