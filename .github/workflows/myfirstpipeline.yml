@@ -7,10 +7,6 @@ jobs:
   terraform:
     name: terraform
     runs-on: ubuntu-latest
-    
-      include:
-        - environment: test
-          secret_name: TEST_PASSWORD
 
     defauts:
       run:
@@ -18,6 +14,11 @@ jobs:
     
     strategy:
      max-parallel: 1
+     matrix:
+       environment: [test]
+        include:
+        - environment: test
+          secret_name: TEST_PASSWORD
     
 
     steps: 
